@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui list task</title>
+    <style>
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            margin-bottom: 36px;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            text-shadow: 1px 1px 2px red;
+        }
+        .main-box{
+            background-color: #eee;
+            padding: 12px 24px;
+            width: fit-content;
+            border-radius: 12px;
+            box-shadow: 2px 2px 5px #999;
+            margin: 0 auto;
+        }
+        dt, dd{
+            margin-bottom: 8px;
+        }
+        dt{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-box">
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+
+            <dt>CSS</dt>
+            <dd>Casecading Style Sheet</dd>
+
+            <dt>JS</dt>
+            <dd>JavaScrip</dd>
+        </dl>
+    </div>
+</body>
+</html>
