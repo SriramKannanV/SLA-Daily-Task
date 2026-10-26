@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    padding: 0 130px;
+}
+
+/* Navbar */
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.nav-brand{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+}
+.nav-links a:hover{
+    color: #aaa;
+}
+
+/* Hero */
+.hero-box{
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+.hero-content{
+    width: 45%;
+}
+.hero-content h1{
+    font-size: 60px;
+}
+.hero-content-p{
+    font-size: 14px;
+    color: #777;
+    margin: 28px 0;
+}
+.hero-img{
+    margin: 0 auto;
+}
+.hero-img img{
+    height: 480px;
+}
+.hero-btn-box{
+    display: flex;
+    gap: 12px;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #999;
+    padding: 12px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #999;
+    margin-bottom: 5px;
+    transition: all 200ms ease-in-out;
+}
+.hero-btn i{
+    font-size: 32px;
+}
+.hero-btn h3{
+    font-size: 24px;
+}
+.hero-btn p{
+    font-size: 12px;
+}
+.hero-btn:first-child i{
+    color: #999;
+}
+.hero-btn:first-child{
+    transition: all 200ms ease-in-out;
+}
+.hero-btn:first-child:hover{
+    background-color: blue;
+    color: #fff;
+}
+.hero-btn:last-child{
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.hero-btn:last-child:hover{
+    background-color: blue;
+}
+.shape{
+    height: 1000px;
+    width: 1500px;
+    background: linear-gradient(45deg, rgb(0, 191, 255), blue);
+    position: absolute;
+    top: -600px;
+    left: 180px;
+    rotate: 45deg;
+    z-index: -1;
+    border-radius: 300px;
+}
