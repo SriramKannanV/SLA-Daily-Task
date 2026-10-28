@@ -112,3 +112,51 @@ nav{
     background-color: rgb(255, 255, 111);
     cursor: pointer;
 }
+
+/* Company */
+
+.comapny-box{
+    text-align: center;
+    margin-top: 44px;
+    border-bottom: 2px dotted #999;
+    padding-bottom: 36px;
+    margin-bottom: 18px;
+}
+.comapny-box h2{
+    margin-bottom: 24px;
+}
+.comapny-box img{
+    width: 100%;
+}
+
+/* Contact */
+
+.contact-box{
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+.contact-text{
+    width: 60%;
+    border-right: 6px dashed #aaa;
+    padding-right: 16px;
+}
+.contact-text h2, h3{
+    text-transform: uppercase;
+}
+.contact-text h3{
+    color: #6c6c6c;
+    margin-bottom: 6px;
+}
+.contact-text h2{
+    margin-bottom: 100px;
+}
+.contact-text p{
+    color: #343434;
+}
+.contact-text p b{
+    text-decoration: underline;
+}
+.contact-form-box{
+    margin: auto;
+}
