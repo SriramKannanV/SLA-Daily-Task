@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    color: #fff;
+    margin: 12px;
+    padding: 8px;
+    cursor: pointer;
+}
+.a{
+    transition: all 500ms ease;
+}
+.a:hover{
+    width: 500px;
+}
+.b{
+    transition: all 500ms ease-in;
+}
+.b:hover{
+    width: 500px;
+}
+.c{
+    transition: all 500ms ease-in-out;
+}
+.c:hover{
+    width: 500px;
+}
+.d{
+    transition: all 500ms ease-out;
+}
+.d:hover{
+    width: 500px;
+}
+.aa{
+    height: 200px;
+    width: 200px;
+    color: #fff;
+    margin: 12px;
+    padding: 8px;
+    cursor: pointer;
+    animation: aa 1s infinite;
+}
+.bb{
+    height: 200px;
+    width: 200px;
+    color: #fff;
+    margin: 12px;
+    padding: 8px;
+    cursor: pointer;
+    animation: bb 2s infinite;
+}
+@keyframes aa {
+    from{
+        background-color: blue;
+        float: left;
+    }
+    to{
+        background-color: red;
+        float: right;
+    }
+}
+@keyframes bb {
+    0%{
+        background-color: yellow;
+    }
+    20%{
+        background-color: orange;
+    }
+    40%{
+        background-color: red;
+    }
+    60%{
+        background-color: green;
+    }
+    80%{
+        background-color: burlywood;
+    }
+    100%{
+        background-color: brown;
+    }
+}
