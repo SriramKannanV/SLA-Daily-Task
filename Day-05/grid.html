@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-1{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 80px 1fr 80px;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-areas: 
+            "header header header"
+            "nav article article"
+            "footer footer footer";
+        }
+        .grid-2{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 80px 1fr 80px;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-areas: 
+            "nav header header"
+            "nav article article"
+            "nav footer footer";
+        }
+        nav, header, article, footer{
+            background-color: aqua;
+            border: 2px solid #fff;
+            padding: 0 18px;
+        }
+        nav{
+            grid-area: nav;
+        }
+        header{
+            grid-area: header;
+        }
+        article{
+            grid-area: article;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- grid one -->
+    <h3>1st Grid</h3>
+    <div class="grid-1">
+        <nav>
+            <p>Navigation</p>
+        </nav>
+        <header>
+            <p>Header</p>
+        </header>
+        <article>
+            <p>Article</p>
+        </article>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+
+    <h3>2nd Grid</h3>
+    <!-- grid two -->
+    <div class="grid-2">
+        <nav>
+            <p>Navigation</p>
+        </nav>
+        <header>
+            <p>Header</p>
+        </header>
+        <article>
+            <p>Article</p>
+        </article>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
