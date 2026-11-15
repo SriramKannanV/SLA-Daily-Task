@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions</title>
+</head>
+<body>
+    
+    <script>
+        const a = 5;
+        const b = 10;
+
+        function addNumbers(){
+            document.write(`${a} + ${b} = ${a + b} <br><br>`)
+        }
+
+        addNumbers();
+
+        const num = 10;
+
+        function checkEvenOdd(){
+            if(num % 2 == 0){
+                document.write(`${num} is Even <br><br>`);
+            } else document.write(`${num} is Odd`);
+        }
+
+        checkEvenOdd();
+
+        const c = 12;
+        const d = 45;
+        const e = 78;
+
+        function findLargest(){
+            if (c > d && c > e){
+                document.write(`${c} is greater number`);
+                return;
+            } else if (d > a && d > e){
+                document.write(`${d} is greater number`);
+                return;
+            } else document.write(`${e} is greater number <br><br>`);
+        }
+
+        findLargest();
+
+        const f = 5;
+
+        function factorial(){
+            let result = 1;
+            for (let i = 2; i <= f; i++){
+                result *= i;
+            }
+            document.write(`Factorial of ${f} is ${result} <br><br>`)
+        }
+
+        factorial();
+
+        const name = "Sriram Kannan";
+
+        function reverseString(){
+            let arr = name.split('');
+            let i = 0;
+            let j = arr.length - 1;
+
+            while (i != j){
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j--;
+            }
+            let newName = arr.join('');
+            document.write(`'${name}' is reversed as '${newName}' <br><br>`)
+        }
+
+        reverseString();
+
+        const word = "Vowels";
+
+        function countVowels(){
+            let count = 0;
+            const vowels = "aeiouAEIOU";
+
+            for (let char of word){
+                if (vowels.includes(char)){
+                    count++;
+                }
+            }
+            document.write(`Number of Vowels in word ${word} is ${count}`)
+        }
+
+        countVowels();
+
+    </script>
+</body>
+</html>
